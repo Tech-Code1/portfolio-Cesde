@@ -5,6 +5,7 @@
     --black-font: #141414;
     --color-btn-social: #FFFFFF;
     --color-btn-descarga: #FFE608;
+    --blue-reference: #1B29A4;
 
     /*Fonts*/
     --titulo-seccion: 'Comfortaa', cursive;
@@ -138,6 +139,10 @@ h2, h3, h1, p {
     color: var(--body);
 }
 
+.seccion-referencias:hover .titulo-hover {
+    color: var(--body);
+}
+
 .seccion-datos-basicos:hover {
     box-shadow: 0px 0px 33px rgba(255, 230, 8, 0.5);
 }
@@ -185,5 +190,11 @@ width: 185px;
     font-weight: 500;
 }
 
+.title-reference {
+    color: var(--blue-reference);
+    font-family: var(--titulo-seccion);
+    font-size: var(--fourteen);
+    font-weight: 500;
+}
 
 
