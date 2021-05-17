@@ -143,6 +143,10 @@ h2, h3, h1, p {
     color: var(--body);
 }
 
+.seccion-voluntariados:hover .titulo-hover {
+    color: var(--body);
+}
+
 .seccion-datos-basicos:hover {
     box-shadow: 0px 0px 33px rgba(255, 230, 8, 0.5);
 }
