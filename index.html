@@ -23,7 +23,33 @@
 		<!-- <div id="index-19"></div> -->
 		<main>
 			<article class="contenedor-grid d-grid">
+				<!-- Modal -->
+				<div
+					class="modal fade"
+					id="exampleModal"
+					tabindex="-1"
+					aria-labelledby="exampleModalLabel"
+					aria-hidden="true"
+				>
+					<div class="modal-dialog modal-dialog-scrollable modal-fullscreen">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLabel">Sobre mi</h5>
+								<button
+									type="button"
+									class="btn-close"
+									data-bs-dismiss="modal"
+									aria-label="Close"
+								></button>
+							</div>
+							<div class="modal-body">Acá va el contenido</div>
+						</div>
+					</div>
+				</div>
+
 				<section
+					data-bs-toggle="modal"
+					data-bs-target="#exampleModal"
 					class="seccion-datos-basicos d-flex p-3 flex-column justify-content-between"
 					id="datos"
 				>
@@ -34,7 +60,7 @@
 								src="svg/icon-datos.svg"
 								alt="Icono sección datos básicos"
 							/>
-							<h2 class="titulo-seccion">Datos básicos</h2>
+							<h2 class="titulo-seccion">Sobre mi</h2>
 						</div>
 						<h1 class="titulo-principal">David Montoya Ramírez</h1>
 						<p class="titulo-hover">Dar click para ver detalles</p>
