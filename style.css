@@ -1,12 +1,22 @@
 :root {
     /*colors*/
     --body: #1F149E;
-    --cards-color: #F5F5F5;
+    --cards-color: #f8f8f8;
+    --black-font: #141414;
+    --color-btn-social: #FFFFFF;
+    --color-btn-descarga: #FFE608;
+
+    /*Fonts*/
+    --titulo-seccion: 'Comfortaa', cursive;
+
+    /*sizes*/
+    --fourteen: 14px;
+    --eighteen: 18px;
+    --twenty-eight: 24px;
 }
 
 .estilo-body {
     background-color: var(--body);
-    padding: 24px;
 }
 
 .seccion-datos-basicos,
@@ -18,22 +28,37 @@
 .seccion-referencias {
     background-color: var(--cards-color);
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .seccion-datos-basicos {
     grid-area: datos;
+    /* position: relative;
+    z-index: 20; */
+    margin: 24px 0 0 24px;
 }
+
+/* .index-19 {
+    position: absolute;
+    z-index: 19;
+    width: 100vmax;
+    height: 100vmin;
+    background-color: rgba(0, 0, 0, 0.9);
+} */
 
 .seccion-voluntariados {
     grid-area: voluntariados;
+    margin: 24px 24px 0 0;
 }
 
 .seccion-experiencia-laboral {
     grid-area: laboral;
+    margin: 0 0 0 24px;
 }
 
 .seccion-educacion {
     grid-area: educacion;
+    margin: 0 0 0 24px;
 }
 
 .seccion-estudios-cursos {
@@ -42,20 +67,86 @@
 
 .seccion-habilidades {
     grid-area: habilidades;
+    margin: 0 24px 0 0;
 }
 
 .seccion-referencias {
     grid-area: referencias;
+    margin: 0 0 0 24px;
 }
 
 .contenedor-grid {
     height: 100%;
     width: 100%;
-    grid-template-columns: 660px 660px auto;
-    grid-template-rows: 287px 234px 163px 133px;
+    grid-template-columns: 36% 36% auto;
+    grid-template-rows: 287px 234px 163px 157px;
     grid-gap: 24px;
     grid-template-areas: "datos datos voluntariados"
     "laboral estudios habilidades"
     "educacion estudios habilidades"
     "referencias referencias habilidades";
+}
+
+.icon-seccion {
+    height: 48px;
+    width: auto;
+}
+
+.titulo-seccion {
+    font-family: var(--titulo-seccion);
+    font-size: var(--eighteen);
+    font-weight: bold;
+    color: var(--body);
+}
+
+.titulo-principal {
+    font-family: var(--titulo-seccion);
+    font-size: var(--twenty-eight);
+    color: var(--black-font);
+    font-weight: bold;
+}
+
+.titulo-hover {
+    color: transparent;
+    font-size: var(--fourteen);
+    font-weight: bold;
+}
+
+.seccion-datos-basicos:hover  .titulo-hover{
+    color: var(--body);
+}
+
+.seccion-datos-basicos:hover {
+    box-shadow: 0px 0px 33px rgba(255, 230, 8, 0.5);
+}
+
+.img-david {
+    width: 161.38px;
+    height: 165.26px;
+}
+
+.btn-red-social,
+.btn-descargar-cv {
+    border-radius: 40px;
+    padding: 0 8px;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.18);
+    font-family: var(--titulo-seccion);
+    font-weight: bold;
+}
+
+.btn-red-social {
+    background-color: var(--color-btn-social);
+    text-decoration: none;
+    color: var(--body);
+    width: 178px;
+    height: 50px;
+}
+
+.btn-descargar-cv {
+outline: none;
+border: none;
+width: 185px;
+    height: 50px;
+    color: var(--color-btn-descarga);
+    background-color: var(--body);
 }
