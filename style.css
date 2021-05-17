@@ -11,6 +11,7 @@
 
     /*sizes*/
     --fourteen: 14px;
+    --sixteen: 16px;
     --eighteen: 18px;
     --twenty-eight: 24px;
 }
@@ -29,6 +30,11 @@
     background-color: var(--cards-color);
     border-radius: 5px;
     cursor: pointer;
+    padding: 16px;
+}
+
+h2, h3, h1, p {
+    margin: 0;
 }
 
 .seccion-datos-basicos {
@@ -116,6 +122,10 @@
     color: var(--body);
 }
 
+.seccion-experiencia-laboral:hover  .titulo-hover{
+    color: var(--body);
+}
+
 .seccion-datos-basicos:hover {
     box-shadow: 0px 0px 33px rgba(255, 230, 8, 0.5);
 }
@@ -150,5 +160,17 @@ width: 185px;
     color: var(--color-btn-descarga);
     background-color: var(--body);
 }
+
+.list-style {
+    color: var(--body);
+}
+
+.list-style-parrafo {
+    color: var(--black-font);
+    font-family: var(--titulo-seccion);
+    font-size: var(--sixteen);
+    font-weight: 500;
+}
+
 
 
