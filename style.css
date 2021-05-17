@@ -1,0 +1,61 @@
+:root {
+    /*colors*/
+    --body: #1F149E;
+    --cards-color: #F5F5F5;
+}
+
+.estilo-body {
+    background-color: var(--body);
+    padding: 24px;
+}
+
+.seccion-datos-basicos,
+.seccion-voluntariados,
+.seccion-experiencia-laboral,
+.seccion-estudios-cursos,
+.seccion-habilidades,
+.seccion-educacion,
+.seccion-referencias {
+    background-color: var(--cards-color);
+    border-radius: 5px;
+}
+
+.seccion-datos-basicos {
+    grid-area: datos;
+}
+
+.seccion-voluntariados {
+    grid-area: voluntariados;
+}
+
+.seccion-experiencia-laboral {
+    grid-area: laboral;
+}
+
+.seccion-educacion {
+    grid-area: educacion;
+}
+
+.seccion-estudios-cursos {
+    grid-area: estudios;
+}
+
+.seccion-habilidades {
+    grid-area: habilidades;
+}
+
+.seccion-referencias {
+    grid-area: referencias;
+}
+
+.contenedor-grid {
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 660px 660px auto;
+    grid-template-rows: 287px 234px 163px 133px;
+    grid-gap: 24px;
+    grid-template-areas: "datos datos voluntariados"
+    "laboral estudios habilidades"
+    "educacion estudios habilidades"
+    "referencias referencias habilidades";
+}
