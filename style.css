@@ -25,9 +25,7 @@
 .seccion-voluntariados,
 .seccion-experiencia-laboral,
 .seccion-estudios-cursos,
-.seccion-habilidades,
-.seccion-educacion,
-.seccion-referencias {
+.seccion-habilidades {
     background-color: var(--cards-color);
     border-radius: 5px;
     cursor: pointer;
@@ -40,18 +38,8 @@ h2, h3, h1, p {
 
 .seccion-datos-basicos {
     grid-area: datos;
-    /* position: relative;
-    z-index: 20; */
     margin: 24px 0 0 24px;
 }
-
-/* .index-19 {
-    position: absolute;
-    z-index: 19;
-    width: 100vmax;
-    height: 100vmin;
-    background-color: rgba(0, 0, 0, 0.9);
-} */
 
 .seccion-voluntariados {
     grid-area: voluntariados;
@@ -60,11 +48,6 @@ h2, h3, h1, p {
 
 .seccion-experiencia-laboral {
     grid-area: laboral;
-    margin: 0 0 0 24px;
-}
-
-.seccion-educacion {
-    grid-area: educacion;
     margin: 0 0 0 24px;
 }
 
@@ -77,11 +60,6 @@ h2, h3, h1, p {
     margin: 0 24px 0 0;
 }
 
-.seccion-referencias {
-    grid-area: referencias;
-    margin: 0 0 0 24px;
-}
-
 .contenedor-grid {
     height: 100%;
     width: 100%;
@@ -90,8 +68,8 @@ h2, h3, h1, p {
     grid-gap: 24px;
     grid-template-areas: "datos datos voluntariados"
     "laboral estudios habilidades"
-    "educacion estudios habilidades"
-    "referencias referencias habilidades";
+    "laboral estudios habilidades"
+    "laboral estudios habilidades";
 }
 
 .icon-seccion {
@@ -135,10 +113,6 @@ h2, h3, h1, p {
     color: var(--body);
 }
 
-.seccion-educacion:hover .titulo-hover {
-    color: var(--body);
-}
-
 .seccion-referencias:hover .titulo-hover {
     color: var(--body);
 }
@@ -155,6 +129,7 @@ h2, h3, h1, p {
 .img-david {
     width: 161.38px;
     height: 165.26px;
+    margin-right: 16px;
 }
 
 .btn-red-social,
@@ -191,13 +166,6 @@ width: 185px;
     color: var(--black-font);
     font-family: var(--titulo-seccion);
     font-size: var(--sixteen);
-    font-weight: 500;
-}
-
-.title-reference {
-    color: var(--blue-reference);
-    font-family: var(--titulo-seccion);
-    font-size: var(--fourteen);
     font-weight: 500;
 }
 
