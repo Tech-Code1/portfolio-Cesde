@@ -245,3 +245,158 @@ width: 185px;
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
     background: var(--color-btn-social);
 }
+
+.box {
+    width: 220px;
+    height: 220px;
+    background: var(--cards-color);
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.percent,
+.circle-one {
+    width: 150px;
+    height: 150px;
+}
+
+.svg-circle {
+    width: 160px;
+    height: 160px;
+}
+
+.circle-one:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 50) / 100);
+}
+
+.circle-two:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 80) / 100);
+}
+
+.circle-three:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 60) / 100);
+}
+
+.circle-four:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 70) / 100);
+}
+
+.circle-five:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 30) / 100);
+}
+
+.circle-six:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 40) / 100);
+}
+
+.circle-seven:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 30) / 100);
+}
+
+.circle-eight:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 65) / 100);
+}
+
+.circle-nine:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 80) / 100);
+}
+
+.circle-ten:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 40) / 100);
+}
+
+.circle-eleven:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 35) / 100);
+}
+
+.circle-twelve:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 70) / 100);
+}
+
+.circle-one,
+.circle-two,
+.circle-three,
+.circle-four,
+.circle-five,
+.circle-six,
+.circle-seven,
+.circle-eight,
+.circle-nine,
+.circle-ten,
+.circle-eleven,
+.circle-twelve {
+    fill: #24262f;
+    stroke-width: 10;
+    stroke: #000;
+    transform: translate(5px, 5px);
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    stroke-linecap: round;
+}
+
+.circle-one:nth-child(1),
+.circle-two:nth-child(1),
+.circle-three:nth-child(1),
+.circle-four:nth-child(1),
+.circle-five:nth-child(1),
+.circle-six:nth-child(1),
+.circle-seven:nth-child(1),
+.circle-eight:nth-child(1),
+.circle-nine:nth-child(1),
+.circle-ten:nth-child(1),
+.circle-eleven:nth-child(1),
+.circle-twelve:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke: #9999a048;
+}
+
+.circle-one:nth-child(2),
+.circle-two:nth-child(2),
+.circle-three:nth-child(2),
+.circle-four:nth-child(2),
+.circle-five:nth-child(2),
+.circle-six:nth-child(2),
+.circle-seven:nth-child(2),
+.circle-eight:nth-child(2),
+.circle-nine:nth-child(2),
+.circle-ten:nth-child(2),
+.circle-eleven:nth-child(2),
+.circle-twelve:nth-child(2) {
+    stroke: rgb(16, 159, 255);
+}
+
+.number {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: rgb(250, 240, 181);
+}
+
+.percent-number {
+    font-size: 28px;
+    font-family: var(--titulo-seccion);
+}
+
+.content-global-skill {
+    width: 100%;
+}
+
+.title-project {
+    height: 44px;
+    width: 100%;
+    background: rgb(19, 19, 20);
+    bottom: 0;
+    font-family: var(--titulo-seccion);
+    color: var(--cards-color);
+    font-size: var(--sixteen);
+}
+
+.img-project {
+    width: 470px;
+    height: 265px;
+}
+
+.content-projects {
+    text-decoration: none;
+}
