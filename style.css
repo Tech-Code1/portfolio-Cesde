@@ -140,9 +140,11 @@ h2, h3, h1, p {
     font-family: var(--titulo-seccion);
     font-weight: bold;
     z-index: 2;
+    text-decoration: none;
 }
 
 .modal-handler {
+    display: flex;
     position: absolute;
     z-index: 1;
     width: 100%;
@@ -164,6 +166,11 @@ width: 185px;
     height: 50px;
     color: var(--color-btn-descarga);
     background-color: var(--body);
+}
+
+.btn-descargar-cv:hover,
+.btn-descargar-cv:link {
+    color: var(--color-btn-descarga);
 }
 
 .list-style {
