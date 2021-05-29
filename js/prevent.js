@@ -1,23 +1,18 @@
-let sectionDatos = document.getElementById("datos")
+/* let sectionDatos = document.getElementById("datos").removeAttribute("data-bs-target", "data-bs-toggle") 
 
 
-let btnLinkedin = document.getElementById("btn-Linkedin").addEventListener("click", preventModal)
-let btnFacebook = document.getElementById("btn-facebook").addEventListener("click", preventModal)
-let btnGithub = document.getElementById("btn-github").addEventListener("click", preventModal)
+let btnLinkedin = document.getElementById("btn-Linkedin")
+let btnFacebook = document.getElementById("btn-facebook")
+let btnGithub = document.getElementById("btn-github")
 
-function preventModal() {
- 
-if (btnLinkedin || btnFacebook || btnGithub == true){
+sectionDatos.addEventListener("click", openModal)
 
-    sectionDatos.removeAttribute("data-bs-target", "data-bs-toggle") 
-    console.log("true")
-} else {
+function openModal() {
     sectionDatos.setAttribute("data-bs-toggle", "modal")
-console.log("false");
- }
+    console.log("false");
+}
 
 
-  }   
 
 
- console.log(preventModal());
+console.log(sectionDatos); */
