@@ -177,8 +177,6 @@
 				</div>
 
 				<section
-					data-bs-toggle="modal"
-					data-bs-target="#modal-datos"
 					class="seccion-datos-basicos d-flex flex-column justify-content-between"
 					id="datos"
 				>
@@ -1606,6 +1604,18 @@
 			integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
 			crossorigin="anonymous"
 		></script>
-		<script src="js/prevent.js"></script>
+		<script>
+			var myModal = new bootstrap.Modal(document.getElementById('modal-datos'));
+
+			let sectionDatos = document.getElementById("datos");
+			sectionDatos.addEventListener("click", (e) => {
+				console.log(e.target.id);
+
+				let buttons = ["btn-Linkedin", "btn-facebook", "btn-github"];
+				if (!buttons.includes(e.target.id))
+					myModal.show();
+			})
+
+		</script>
 	</body>
 </html>
