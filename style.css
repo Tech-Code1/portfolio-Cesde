@@ -143,13 +143,6 @@ h2, h3, h1, p {
     text-decoration: none;
 }
 
-.modal-handler {
-    display: flex;
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-}
 
 .btn-red-social {
     background-color: var(--color-btn-social);
